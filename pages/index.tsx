@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import ProductList from "../components/ProductList";
+import TransactionList from "../components/TransactionList";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +13,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout isActive={true}>
-        <>hello</>
+        <div className="flex justify-between">
+          <ProductList />
+          <TransactionList />
+        </div>
       </Layout>
     </div>
   );
