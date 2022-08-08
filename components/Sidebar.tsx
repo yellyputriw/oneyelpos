@@ -18,7 +18,7 @@ interface ISidebar {
 
 const Sidebar = ({ isActive }: ISidebar) => {
   return (
-    <aside className="w-[240px] bg-white h-screen pt-5 px-5">
+    <aside className="w-[240px] bg-white h-screen pt-5 px-5 fixed">
       <div className="border-b border-b-black flex justify-between pb-5">
         <Image src="/vercel.svg" width={100} height={24} alt="logo" />
         <RiArrowDropLeftLine className="text-3xl" />

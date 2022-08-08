@@ -3,19 +3,19 @@ import ProductItem from "./ProductItem";
 
 const ProductList = () => {
   return (
-    <div>
-      <ul>
-        {productData.map((product) => (
+    <section id="product" className="px-4 my-8">
+      <div className="grid grid-cols-3 gap-6">
+        {productData.map((data) => (
           <ProductItem
-            key={product.id}
-            id={product.id}
-            img={product.img}
-            name={product.name}
-            price={product.price}
+            id={data.id}
+            key={data.id}
+            img={data.img}
+            name={data.name}
+            price={data.price}
           />
         ))}
-      </ul>
-    </div>
+      </div>
+    </section>
   );
 };
 

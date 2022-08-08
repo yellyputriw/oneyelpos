@@ -10,9 +10,9 @@ interface ILayout {
 const Layout = ({ children, isActive }: ILayout) => {
   return (
     <div className="bg-neutral-100 ">
-      <Header />
-      <div className="grid grid-cols-3">
-        <Sidebar isActive={isActive} />
+      <Sidebar isActive={isActive} />
+      <div className="ml-64 pt-4 px-4">
+        <Header />
         {children}
       </div>
     </div>
